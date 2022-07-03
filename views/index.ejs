@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Recipes</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1 class="inline">Recipe Finder</h1> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	<img src="yummy.png" />
+
+
+	<h3>Specify what kind of recipe you're looking for below</h3>
+
+	<hr>
+	<br>
+	<form action="/recipes" method="post">
+		<label><strong>Do you have any dietary restrictions?</strong> </label>
+		<br>
+		<br>
+		<label><input class="cb" id="dairy" type="checkbox" name="dairy" value="dairy" /> Dairy</label>
+		<label><input class="cb" id="egg" type="checkbox" name="egg" value="egg" /> Egg</label>
+		<label><input class="cb" id="gluten" type="checkbox" name="gluten" value="gluten" /> Gluten</label>
+		<label><input class="cb" id="seafood" type="checkbox" name="seafood" value="seafood" /> Seafood</label>
+		<label><input class="cb" id="shellfish" type="checkbox" name="shellfish" value="shellfish" /> Shellfish</label>
+		<label><input class="cb" id="peanut" type="checkbox" name="peanut" value="peanut" /> Peanut</label>
+		<label><input class="cb" id="sesame" type="checkbox" name="sesame" value="sesame" /> Sesame</label>
+		<label><input class="cb" id="soy" type="checkbox" name="soy" value="soy" /> Soy</label>
+		<label><input class="cb" id="sulfite" type="checkbox" name="sulfite" value="sulfite" /> Sulfite</label>
+		<label><input class="cb" id="treenut" type="checkbox" name="treenut" value="treenut" /> Tree nut</label>
+		<label><input class="cb" id="wheat" type="checkbox" name="wheat" value="wheat" /> Wheat</label>
+
+		<br>
+		<br>
+		<label class="bold"><strong>How many results do you want to see? </strong></label> &nbsp &nbsp <input id="num"
+			name="num" type="number" min="1" max="10" value="1" required> &nbsp;
+
+		<br>
+		<br>
+
+		<label><strong>Specify what kind of food: </strong></label> &nbsp &nbsp <input type="text" name="search"
+			placeholder="pasta" required /> <br>
+		For example: smoothie, chicken, noodles, pasta, vegetables, Italian, Asian, dinner, lunch, ...etc.
+		<br>
+		<br>
+		<input type="submit" id="search" value="Find Recipe(s)" /> <br>
+
+	</form>
+
+	<br>
+	<hr>
+	<a href="/saved">Browse saved recipes</a></li>
+ 
+</body>
+</html>

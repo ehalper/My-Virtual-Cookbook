@@ -1,0 +1,22 @@
+{
+  "name": "my-recipefinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "recipeFinder.js",
+  "scripts": {
+    "start": "node recipeFinder.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.3.2",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.4",
+    "request": "^2.88.2",
+    "serve": "^13.0.2"
+  }
+}

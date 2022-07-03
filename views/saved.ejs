@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Saved Recipes</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <h1>My Saved Recipes</h1>
+
+    <%- tableStr %>
+
+        <br>
+        <hr>
+
+        <form action="/clear" method="post">
+
+            Delete All Saved Recipes &nbsp;&nbsp;&nbsp;
+            <input type="submit" id="clear" value="Delete" onclick="checker()" />
+
+        </form>
+
+        <script>
+
+            function checker() {
+
+                if (confirm("Are you sure you want to delete all your saved recipes?\n") == true) {
+
+                } else {
+                    event.preventDefault();
+                }
+
+            }
+
+        </script>
+
+        <hr>
+        <a href="/">Find new recipes</a></li>
+
+</body>
+
+</html>

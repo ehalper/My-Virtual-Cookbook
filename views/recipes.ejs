@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Recipe Results</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <form action="/save" method="post">
+        <h1>Recipe Results</h1>
+        <hr>
+
+        <span>
+            <h3>Searched: <%- search %>
+            </h3>
+            <h3>Number of recipes: <%- num %>
+            </h3>
+            <h3>Intolerances: <%- intolerances %>
+            </h3>
+
+            <%- tableStr %>
+                <br>
+
+
+                <form action="/save" method="post">
+                    <hr>
+                    <h2>Save Recipe(s)</h2>
+                    <label>Name of food: <input type="text" name="name" required /></label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Meal Type:</label>
+                    <select name="meal" id="meal" required>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Brunch">Brunch</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Drink">Drink</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                    <br>
+                    <br>
+                    <label>Link: <input type="url" name="link" required placeholder="http://..." /></label>
+                    <br>
+                    <br>
+                    <label>Time (in minutes): <input type="number" name="time" required placeholder="60" min="0" /></label>
+                    &nbsp; &nbsp;
+                    <label>Servings: <input type="number" name="servings" required placeholder="1" min="1" /></label> <br>
+
+                    <br>
+                    <input type="submit" id="save" value="Save!" onclick="checker()" /> <br>
+
+                    <br>
+                    <hr>
+                    <a href="/">Find new recipes</a></li>
+                    &nbsp; &nbsp; &nbsp;
+                    <a href="/saved">Browse saved recipes</a></li>
+
+                </form>
+
+                <script>
+
+                    function checker() {
+
+
+                        if (confirm("Are you sure you want to save this recipe?\n") == true) {
+
+                        } else {
+                            event.preventDefault();
+                        }
+
+
+                    }
+
+                </script>
+
+
+
+</body>
+
+</html>
