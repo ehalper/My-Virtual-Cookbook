@@ -6,7 +6,8 @@ to save recipes they want to keep, and they are able to view all of their saved 
 
 The application uses Javascript, Node, Express, HTML, CSS, MongoDB and the Spoonacular API.
 
-![new2](https://github.com/ehalper/Virtual-Cookbook/assets/71235972/6c1f753e-dd4d-43d6-9bc5-473ee7f84dc3)
+![final](https://github.com/ehalper/Virtual-Cookbook/assets/71235972/35e962d6-3610-4b17-a45d-4691b4ef2ba1)
 
-<img width="791" alt="pic1" src="https://user-images.githubusercontent.com/71235972/212531083-2ab33e17-91b2-4e36-8763-7428909c8561.png">
+<img width="1280" alt="Screen Shot 2023-09-01 at 3 23 43 PM" src="https://github.com/ehalper/Virtual-Cookbook/assets/71235972/fffc5932-9064-46d2-910d-252e89a56f13">
+
 
