@@ -4,7 +4,7 @@
 The web application allows users to find new recipes while taking any food intolerances they may have into account, using the Spoonacular API. The user will specify any dietary restrictions, how many recipe results they want to see, and the kind of food they are querying. In addition, the user is able 
 to save recipes they want to keep, and they are able to view all of their saved recipes (as well as delete) using MongoDB. 
 
-The application uses Javascript, Node, Express, HTML, CSS, MongoDB and the Spoonacular API.
+The application uses JavaScript, Node, Express, HTML, CSS, MongoDB and the Spoonacular API.
 
 ![final](https://github.com/ehalper/Virtual-Cookbook/assets/71235972/35e962d6-3610-4b17-a45d-4691b4ef2ba1)
 
